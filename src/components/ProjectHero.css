@@ -1,0 +1,223 @@
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.project-hero-container {
+  /* background: url('/images/pluraledge/1.jpg') center center/cover no-repeat; */
+
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+.content-above-hero {
+  position: absolute !important;
+  justify-content: center;
+}
+
+.overlay {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  opacity: 0.8;
+
+  transition: background-color 0.3s ease;
+}
+
+.overlay:hover {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  transition: background-color 0.3s ease;
+  opacity: 1;
+  
+}
+
+
+
+.button-hero {
+  text-decoration: none;
+  background-color: transparent;
+  height: 60px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid;
+  border-color: white;
+  border-width: 3px;
+
+  border-radius: 3px;
+  color: white;
+  transition: background-color 0.3s ease;
+
+  animation: float 4s ease-in-out infinite;
+}
+.button-hero:hover {
+  background-color: #000;
+  height: 60px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid;
+  border-color: #000;
+  border-width: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 700;
+  color: white;
+}
+
+.branding-top {
+  color: white;
+  font-weight: 700;
+  letter-spacing: 4;
+}
+
+.branding-title {
+  color: white;
+  font-size: 60px;
+  font-weight:700;
+  display: flex;
+  align-items: "center";
+  justify-content: center;
+  font-family: "AxiformaBold";
+}
+
+.hero-container > h1 {
+  color: #fff;
+  font-size: 100px;
+  margin-top: -100px;
+}
+
+.hero-container > p {
+  margin-top: 8px;
+  color: #fff;
+  font-size: 32px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.hero-btns {
+  margin-top: 32px;
+}
+
+.hero-btns .btn {
+  margin: 6px;
+}
+
+.hero-container > .fa-chevron-down {
+  color: #fff;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 30px;
+  transform: translatey(0px);
+  animation: float 8s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+
+.center-logo {
+  height: 200px;
+  animation: float 6s ease-in-out infinite;
+  -webkit-animation: spin 60s linear infinite;
+  -moz-animation: spin 60s linear infinite;
+  animation: spin 60s linear infinite;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.shadowfilter {
+  -webkit-filter: drop-shadow(0px 0px 7px #74ded730);
+  filter: drop-shadow(0px 0px 7px #74ded730);
+}
+
+@media screen and (max-width: 960px) {
+  .hero-container > h1 {
+    font-size: 70px;
+    margin-top: -150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .branding-top {
+    color: white;
+    font-weight: 700;
+    letter-spacing: 4;
+    font-size: 13px;
+  }
+  .branding-title {
+    color: white;
+    font-size: 40px;
+    display: flex;
+    align-items: "center";
+    justify-content: center;
+    font-family: "Montserrat";
+  }
+  .hero-container > h1 {
+    font-size: 50px;
+    margin-top: -100px;
+  }
+
+  .hero-container > p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .btn-mobile {
+    display: block;
+    text-decoration: none;
+  }
+
+  .btn {
+    width: 100%;
+  }
+  .hero-container > .fa-chevron-down {
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 22px;
+    transform: translatey(0px);
+    animation: float 8s ease-in-out infinite;
+  }
+}
